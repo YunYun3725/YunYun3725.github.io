@@ -8,13 +8,13 @@ window.scrollTo({ top: checktop0, behavior: 'smooth' })
 
    
 positionscroll[1].onclick = function(){
-    let position1 = document.querySelector('.content_container .intro_container');
+    let position1 = document.querySelector('.content_container .aboutme_container');
 let checktop1 = position1.offsetTop
 window.scrollTo({ top: checktop1, behavior: 'smooth' })
 }
 
 positionscroll[2].onclick = function(){
-    let position2 = document.querySelector('.content_container .aboutme_container');
+    let position2 = document.querySelector('.content_container .slider');
 let checktop2 = position2.offsetTop;
 window.scrollTo({ top: checktop2, behavior: 'smooth' })
 }
