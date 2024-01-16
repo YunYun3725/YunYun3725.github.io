@@ -1,4 +1,6 @@
-    document.addEventListener('DOMContentLoaded', function(){
+   alert("this website is not mobile responsive");
+
+document.addEventListener('DOMContentLoaded', function(){
         
     let signupcontainer = document.querySelector('.ShowCase-LogIn .board-container .signup-container');
     let buttonregister = document.querySelector('.ShowCase-LogIn .board-container .signup-content .button-register');
