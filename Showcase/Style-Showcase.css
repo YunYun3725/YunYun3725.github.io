@@ -1,0 +1,318 @@
+html{
+    height: 200vh;
+    overflow-y: hidden;
+}
+body{
+  
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%);
+color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+box-sizing: border-box;
+} 
+.test{
+   
+    width: 70%;
+    margin: auto;
+    height: 70%;
+}
+.ShowCase-LogIn{
+    
+  
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1em;
+   
+}
+
+.LogIn-container{
+    display: flex;
+ justify-content: center;
+flex-direction: column;     
+width: 50%;
+}
+.Logo img{
+    width: 25%;
+    user-select: none;
+}
+.board-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+    position: relative;
+}
+.signup-container{
+    background-color: darkgray;
+    width: 50%;
+height: 100%;
+border-top-left-radius: 30%;
+border-bottom-left-radius: 30%;
+background-color: rgb(62, 78, 165);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;}
+
+.signup-content{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.button-register{
+    width: 50%;
+    height: 8%;
+    outline: hidden;
+    border-radius: 30px;
+    margin-top: 4%;
+    font-weight: 900px;
+    color: white;
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(255, 255, 255, 0.75);
+cursor: pointer;
+}
+
+
+.signup-content h1{
+    font-size: 2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 10% 0 4%;
+    font-weight: 900;
+}
+
+
+
+.text-welcome h1{
+    font-size: 2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 10% 0 4%;
+
+}
+
+.text-welcome p1{
+font-size: 1em;
+color: gray;
+}
+.LogIn-Google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 5%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 4%;
+ cursor:pointer;
+}
+.LogIn-Google img{
+    margin-right: 30px;
+}
+.Username{
+    position: relative;
+    height: 7%;
+   
+}
+.login-email {
+    margin-top: 6%;
+text-align: start;}
+.input-usnername{
+  
+    border: 1px solid #eee;
+    height: 100%;
+    border-radius: 4px;
+   width: calc(100% - 6.5%);
+padding: 0 3%   ;
+outline:none   ;}
+.form-label
+{
+    position: absolute;
+    transform: translateY(50%);
+    margin-left: 5%;
+     text-align: center;
+     display: flex;
+     bottom: 50%;
+     user-select: none;
+     color: darkgray;
+}
+.input-usnername:focus + .form-label{
+    visibility: hidden;
+}
+
+
+.Password{
+    position: relative;
+    height: 7%;
+   
+}
+.login-password {
+    text-align: start;
+    margin-top: 6%;
+}
+.input-password{
+  
+    border: 1px solid #eee;
+    border-radius: 4px;
+   height: 100%;
+   width: calc(100% - 6.5%);
+   outline: none;
+padding: 0 3% ;
+}
+
+.input-password:focus + .form-label{
+    visibility: hidden;
+}
+.form-label-password{
+    position: absolute;
+   transform: translateY(50%);
+   margin-left: 5%;
+    text-align: center;
+    display: flex;
+    user-select: none;
+        bottom: calc(50% - 2px);
+        color: darkgray;
+        
+}
+.input-password:focus + .form-label-password{
+    visibility: hidden;
+
+}
+.input-password:focus {
+    border-color:  #7533cc;
+}
+.input-usnername:focus {
+    border-color:  #7533cc ;
+}
+.SignUp-remind{
+    margin-top: 4%;
+}
+.SignUp-remind a{
+    text-decoration: none;
+}
+.Login-button{
+    height: 8%;
+    margin-top: 10%;
+    width: 100%;
+    background-color: #7520e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+color: white;
+cursor: pointer;}
+
+.list-img{
+display: flex;
+flex-direction: column;
+
+overflow: hidden;
+
+
+
+}
+.address{
+    font-size: 10px;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 92%;
+    left: 68%;
+    text-align: end;
+}   
+.transforms{
+    transform: translateX(-100%);
+    transition: 0.6s ease-in-out;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    }
+    
+    
+    
+    .transforms-reverse{
+        transform: translateX(0%);
+        transition: 0.6s ease-in-out;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        
+        }
+        .text-signup:before{
+            content: "Sign-Up >>";
+        }
+        .text-transform:before{
+            content: "<< Log-in";
+        }
+.content-Login:before{
+    content: "Good to see you!";
+}
+.content-register:before{
+    content: "Welcome to KGU!   ";
+}
+.pSignUp:before{
+content: " Don't have an account? please register with your personal detail to use.";}
+.pLogIn::before{
+    content: "If you already have account, Log-In to use our feature.";
+}
+.register-container{
+    position: absolute;
+    left: 50%;
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.register-card{
+ position: relative;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+    width: 70%;
+    height: 65%;
+    z-index: 0;
+}
+.remind {
+    text-align: start;
+    margin-top: 6%;
+}
+.register-button{
+    height: 100%;
+    margin-top: 10%;
+    width: 100%;
+    background-color: #7520e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+color: white;
+cursor: pointer;}
+.register-card h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+}
