@@ -1,0 +1,780 @@
+html{
+    height: 400vh;
+    width: 100vmax;
+    
+}
+body{
+  
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(269, 85%, 41%, 1) 100%);
+color: white;
+    font-family: sans-serif;
+    overflow-x:hidden;
+    overflow-y: auto;
+box-sizing: border-box;
+background-repeat: no-repeat;
+width: 100vw;
+height: 100vh;
+} 
+.test{
+   
+    width: 70%;
+    margin: auto;
+    height: 70%;
+}
+.ShowCase-LogIn{
+    
+  
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1em;
+   
+}
+
+.LogIn-container{
+    display: flex;
+ justify-content: center;
+flex-direction: column;     
+width: 50%;
+}
+.Logo img{
+    width: 25%;
+    user-select: none;
+}
+.board-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+    position: relative;
+}
+.signup-container{
+    background-color: darkgray;
+    width: 50%;
+height: 100%;
+border-top-left-radius: 30%;
+border-bottom-left-radius: 30%;
+background-color: rgb(62, 78, 165);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;}
+
+.signup-content{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.button-register{
+    width: 50%;
+    height: 8%;
+    outline: hidden;
+    border-radius: 30px;
+    margin-top: 4%;
+    font-weight: 900px;
+    color: white;
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(255, 255, 255, 0.75);
+cursor: pointer;
+}
+
+
+.signup-content h1{
+    font-size: 2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 10% 0 4%;
+    font-weight: 900;
+}
+
+
+
+.text-welcome h1{
+    font-size: 2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 10% 0 4%;
+
+}
+
+.text-welcome p1{
+font-size: 1em;
+color: gray;
+}
+.LogIn-Google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 5%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 4%;
+ cursor:pointer;
+}
+.LogIn-Google img{
+    margin-right: 30px;
+}
+.Username{
+    position: relative;
+    height: 7%;
+   
+}
+.login-email {
+    margin-top: 6%;
+text-align: start;}
+.input-usnername{
+  
+    border: 1px solid #eee;
+    height: 100%;
+    border-radius: 4px;
+   width: calc(100% - 6.5%);
+padding: 0 3%   ;
+outline:none   ;}
+.form-label
+{
+    position: absolute;
+    transform: translateY(50%);
+    margin-left: 5%;
+     text-align: center;
+     display: flex;
+     bottom: 50%;
+     user-select: none;
+     color: darkgray;
+}
+.input-usnername:focus + .form-label{
+    visibility: hidden;
+}
+
+
+.Password{
+    position: relative;
+    height: 7%;
+   
+}
+.login-password {
+    text-align: start;
+    margin-top: 6%;
+}
+.input-password{
+  
+    border: 1px solid #eee;
+    border-radius: 4px;
+   height: 100%;
+   width: calc(100% - 6.5%);
+   outline: none;
+padding: 0 3% ;
+}
+
+.input-password:focus + .form-label{
+    visibility: hidden;
+}
+.form-label-password{
+    position: absolute;
+   transform: translateY(50%);
+   margin-left: 5%;
+    text-align: center;
+    display: flex;
+    user-select: none;
+        bottom: calc(50% - 2px);
+        color: darkgray;
+        
+}
+.input-password:focus + .form-label-password{
+    visibility: hidden;
+
+}
+.input-password:focus {
+    border-color:  #7533cc;
+}
+.input-usnername:focus {
+    border-color:  #7533cc ;
+}
+.SignUp-remind{
+    margin-top: 4%;
+}
+.SignUp-remind a{
+    text-decoration: none;
+}
+.Login-button{
+    height: 8%;
+    margin-top: 10%;
+    width: 100%;
+    background-color: #7520e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+color: white;
+cursor: pointer;}
+
+.list-img{
+display: flex;
+flex-direction: column;
+
+overflow: hidden;
+
+
+
+}
+.address{
+    font-size: 10px;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 92%;
+    left: 68%;
+    text-align: end;
+}   
+.transforms{
+    transform: translateX(-100%);
+    transition: 0.6s ease-in-out;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    }
+    
+    
+    
+    .transforms-reverse{
+        transform: translateX(0%);
+        transition: 0.6s ease-in-out;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        
+        }
+        .text-signup:before{
+            content: "Sign-Up >>";
+        }
+        .text-transform:before{
+            content: "<< Log-in";
+        }
+.content-Login:before{
+    content: "Good to see you!";
+}
+.content-register:before{
+    content: "Welcome to KGU!   ";
+}
+.pSignUp:before{
+content: " Don't have an account? please register with your personal detail to use.";}
+.pLogIn::before{
+    content: "If you already have account, Log-In to use our feature.";
+}
+.register-container{
+    position: absolute;
+    left: 50%;
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.register-card{
+ position: relative;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+    width: 70%;
+    height: 65%;
+    z-index: 0;
+}
+.remind {
+    text-align: start;
+    margin-top: 6%;
+}
+.register-button{
+    height: 80%;
+    margin-top: 10%;
+    width: 100%;
+    background-color: #7520e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+color: white;
+cursor: pointer}
+.register-card h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+}
+
+
+.Animated-test{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+     .Animation-Container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+     }
+
+     .Tittle-Animation{
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    font-size:250%;
+     }
+    .content-container{
+         
+height: 70%;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+border-style: solid;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+.Ball-title{
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+font-size:200%;
+}
+.frame-animation{
+    width: 1600px;
+    height: 500px;
+    margin:auto;
+    border-style: solid;
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    animation: BallX 4s linear infinite, squashing linear 4s infinite;
+      width: 30px;
+    height: 30px;
+    background-color: white;
+  border-radius: 50%;
+}
+
+.circle{
+  
+    position: relative;
+    top:0%;
+animation: Ball 4s linear infinite;
+}
+
+    /* @keyframes squashing{
+
+        5%, 25%, 45%, 65%, 85%, 100%
+        {
+    height: px;}
+    15%{
+        height: 30px;
+        animation-timing-function: ease-in;
+    }
+    35%{
+        height: 30px;
+        animation-timing-function: ease-in;
+
+    }
+    55%{
+        height: 30px;
+        animation-timing-function: ease-in;
+
+    }
+    75%{
+        height: 30px;
+        animation-timing-function: ease-in;
+
+    }
+    90%{
+        height: 30px;
+        animation-timing-function: ease-in;
+
+    }
+    100%{
+        height: 30px;
+        animation-timing-function: ease-out;
+
+    }
+    } */
+
+@keyframes BallX{
+    
+    100%{
+        
+       transform: translateX(1500px);
+       animation-timing-function: linear;
+    }
+}
+
+@keyframes Ball{
+    5%, 25%, 45%, 65%, 85% {
+top:470px;
+animation-timing-function: ease-out;
+
+    }
+    15%{
+top:100px;
+animation-timing-function: ease-in;
+
+    }
+    35%{
+top: 200px;
+animation-timing-function: ease-in;
+
+    }
+    55%{
+        top: 250px;
+        animation-timing-function: ease-in;
+
+    }
+    75%{
+        top:350px;
+        transition-timing-function: ease-in;
+        
+    }   
+    90%{
+
+        top:450px;
+        transition-timing-function: ease-in;
+    }
+    100%{
+        top:470px;
+        transition-timing-function: ease-out;
+        
+    }
+}
+.loading-animation{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container-loading{
+
+    width: 60vw;
+    height: 50vh;
+    background-color: white;
+border-radius: 15px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.loading-node{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+   animation: color-change ease forwards infinite 2s  ;
+  
+}
+
+.loading-node:nth-child(1){
+    right: 0%;
+    top: auto;
+    position: absolute; 
+    animation: rightmovment ease forwards infinite 2s ;}
+.loading-node:nth-child(2){
+    left: 0%;
+    top: auto;
+    position: absolute; 
+    animation: leftmovment ease forwards infinite 2s ;}
+.loading-node:nth-child(3){
+  position: relative;
+ background-color: black;
+
+}
+.node-center{
+position: relative;
+width: 20%;
+height: 1.5rem;
+animation: rotate ease forwards infinite 2s ;
+display: flex;
+justify-content: center;
+align-items: center;
+transform-origin: center;
+
+
+
+}
+@keyframes color-change{
+
+    0%{
+        background-color: violet;
+    
+     }
+    
+     50%{
+        background-color: aqua;
+    
+     }
+     100%{
+        background-color: violet;
+    
+     }
+}
+@keyframes rotate{
+    0%{
+transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ @keyframes rightmovment {
+    0%{
+    right: 0%;
+    background-color: violet;
+
+ }
+ 25%{
+    right: 30%;
+    
+
+ }
+ 50%{
+    right: 0%;
+    background-color: aqua;
+
+ }
+ 100%{
+    background-color: violet;
+
+ }
+}
+
+ @keyframes leftmovment {
+    0%{
+    left: 0%;
+background-color: violet;
+ }
+ 25%{
+    left: 30%;
+ }
+ 50%{
+left: 0%;
+background-color: aqua
+
+}
+ 100%{
+background-color: violet;
+ }
+}
+
+.loading-node2{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;   
+   
+background-color: black;
+}
+
+.loading-node2:nth-child(1){
+    right: 0%;
+    top: auto;
+    position: absolute; 
+    animation: node1-movment infinite 1s ;}
+.loading-node2:nth-child(2){
+    left: 0%;
+    top: auto;
+    position: absolute; 
+    animation: node2-movment infinite 1s ;}
+.loading-node2:nth-child(3){
+left: calc(50% - 12px);  margin-top: auto;
+    position: absolute; 
+    animation: node3-movment infinite 1s ;
+
+}
+.node-center2{
+position: relative;
+width: 15%;
+height: 1.5rem;
+
+
+
+}
+@keyframes node2-movment{
+    0%{
+        top:auto
+    }
+    20%{
+        transform: translateY(-2rem);
+    }
+    40%{
+        top: auto;
+    }
+    100%{
+        top:auto;
+    }
+}
+@keyframes node3-movment{
+    0%{
+        top:auto
+    }
+    20%{
+        top: auto;
+    }
+    40%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        top:auto;
+    }
+}
+@keyframes node1-movment{
+    0%{
+        top:auto
+    }
+    20%{
+        top: auto;
+    }
+    40%{
+        top: auto;
+    }
+    60%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        top:auto;
+    }
+}
+
+.loading
+{height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+font-size:200%;}
+
+.Card-title
+{height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+font-size:200%;}
+
+.CSS-Card{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    
+}
+    .card_1{
+       
+     position: relative;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        z-index: -3;
+        border-radius: 15px;
+        width: 33vmin;
+height:50vmin;
+    }
+    .card_2{
+        background-image: url(/Profile/Showcase/img/Alice-card.jpeg);
+
+background-size: cover;
+aspect-ratio: 5/7;
+        position: relative;
+        
+        width: 33vmin;
+        height: 50vmin;
+                border-radius: 15px;
+        
+    
+    }
+    .card-container{   
+         margin-top: 6%;
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+
+        
+    }
+    .card_2::before{
+        position: absolute;
+        border-radius: 15px;
+        content: '';
+        z-index: -1;
+    transition: 0.3s;
+    }
+    .card_2:hover::before{
+        animation: rgb-border linear 2s infinite;
+        background-color: tomato;
+        inset: -5px;
+
+
+    }
+    @keyframes rgb-border{
+        50%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    .card_1::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        background-color: tomato;
+        border: 5px;
+        height: 130%;
+        transform-origin: center;
+        z-index: -2;
+       
+   animation: rotate-2 2s linear infinite, rgb-border 2s infinite ;
+
+
+    }
+    .card_1::after{
+        background-image: url(/Profile/Showcase/img/FHIBQppaQAIf7vS.jpeg);
+        content: '';
+        inset: 0.7vmin;
+                background-size: cover;
+
+        position: absolute;
+        z-index: -1;
+border-radius: 1vmin;
+
+    }
+  
+    @keyframes rotate-2 {
+        100%{
+            transform: rotate(350deg);
+        }
+        
+    }
+   
