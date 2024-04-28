@@ -1,5 +1,5 @@
    document.addEventListener('DOMContentLoaded', function(){
-        
+        alert("This website not responsive for androind & tablet");
     let signupcontainer = document.querySelector('.ShowCase-LogIn .board-container .signup-container');
     let buttonregister = document.querySelector('.ShowCase-LogIn .board-container .signup-content .button-register');
     let ButtonTextSignup = document.querySelector('.ShowCase-LogIn .board-container .signup-content .button-register .text-signup');
@@ -8,11 +8,8 @@
     let active = 0;
     let n = 0;
     console.log('Paragraph Content:', paragraphContentTransition);
-    
-
     buttonregister.onclick = function loop() {
     n +=1;
-    
         if (active % 2 == 0) {
             ButtonTextSignup.classList.toggle("text-transform");
             signupcontainer.classList.toggle("transforms");
@@ -21,16 +18,8 @@
             HeadContentTransition.classList.remove("content-Login");
             paragraphContentTransition.classList.toggle("pLogIn");
             paragraphContentTransition.classList.remove("pSignUp");
-
             ButtonTextSignup.classList.remove("text-signup");
 
-            
-
-            
-
-        
-
-            
         } else {
             ButtonTextSignup.classList.toggle("text-signup");
             signupcontainer.classList.toggle("transforms-reverse");
@@ -40,15 +29,11 @@
                     HeadContentTransition.classList.remove("content-register");
                     paragraphContentTransition.classList.toggle("pSignUp");
                     paragraphContentTransition.classList.remove("pLogIn");
-
-
-
         }
         active += 1;    
         if(active >= 2){
         active = 0;
     }
-
     }
     }
     );
