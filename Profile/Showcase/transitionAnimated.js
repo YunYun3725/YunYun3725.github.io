@@ -1,5 +1,5 @@
    document.addEventListener('DOMContentLoaded', function(){
-        alert("This website not responsive for androind & tablet");
+        alert("This website only responsive for FHD resolution");
     let signupcontainer = document.querySelector('.ShowCase-LogIn .board-container .signup-container');
     let buttonregister = document.querySelector('.ShowCase-LogIn .board-container .signup-content .button-register');
     let ButtonTextSignup = document.querySelector('.ShowCase-LogIn .board-container .signup-content .button-register .text-signup');
